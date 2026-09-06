@@ -297,7 +297,7 @@ The full feedback entry point and submission pipeline for learners.
 | [#26260](https://github.com/oppia/oppia/pull/26260) | FeedbackSessionInfoService — console patching, HTTP interception, router-history tracking | ✅ Merged |
 | [#26397](https://github.com/oppia/oppia/pull/26397) | Three feedback modal components (SiteFeedback, LessonFeedback, ReportAnIssue), CAPTCHA integration, revert of superseded PRs | ✅ Merged |
 | [#26459](https://github.com/oppia/oppia/pull/26459) | Redesigned backend models and endpoints aligned with updated CUJs, revert of superseded backend PRs | ✅ Merged |
-| [#26552](https://github.com/oppia/oppia/pull/26552) | Learner-side acceptance tests for CUJs LO.15, LO.16, LI.7 | ✅ Merged |
+| [#27133](https://github.com/oppia/oppia/pull/27133) | Learner-side acceptance tests for CUJs LO.15, LO.16, LI.7 | ✅ Merged |
 | [#26651](https://github.com/oppia/oppia/pull/26651) | Promoted exploration\_id to top-level indexed field in BaseFeedbackModel; fixed description validation | ✅ Merged |
 | [#26786](https://github.com/oppia/oppia/pull/26786) | Configurable dismiss button for Oppia toast messages; enabled for feedback submission success toast | ✅ Merged |
 
@@ -328,8 +328,7 @@ The review and moderation surfaces for internal teams.
 
 The feedback system was tested across the different user roles and layers of the application.
 
-- **Acceptance Tests:** Covered the complete CUJs for **logged-in learners, logged-out learners, lesson creators, technical team leads, and admins**.  
-  [CUJs for Web user Feedback](https://docs.google.com/spreadsheets/d/17Y5yOGuy0y5YFPPCUF5fZAZjEyY60bq6J0lik6yH3KE)
+- **Acceptance Tests:** Covered the complete CUJs for **logged-in learners, logged-out learners, lesson creators, technical team leads, and admins**.  [CUJs for Web user Feedback](https://docs.google.com/spreadsheets/d/17Y5yOGuy0y5YFPPCUF5fZAZjEyY60bq6J0lik6yH3KE)
 - **Frontend Unit Tests:** Added and updated **Karma/Jasmine tests** for the feedback components and services.
 - **Backend Unit Tests:** Added **Python unit tests** covering the feedback models, services, handlers, validation, routing, and related backend logic.
 
@@ -353,7 +352,7 @@ The learner feedback acceptance tests passed locally in non-headless Chromium bu
 
 ## Future Scope
 
-**My Suggestions notifications**: the notification system for My Suggestions (alert dot on profile icon, notification micro-cards in profile dropdown) has known open design questions around notification lifecycle and read state that were still being discussed with the product and design teams at the end of the program. The tab itself is built; the notification layer is partially implemented.
+**My Suggestions notifications**: the notification system for My Suggestions (alert dot on profile icon, notification micro-cards in profile dropdown) has known open design questions around notification lifecycle and read state that were still being discussed with the product and design teams at the end of the program. The tab itself is built; the notification layer is partially implemented. [Issue filed: #27159](https://github.com/oppia/oppia/issues/27159)
 
 **Legacy Feedback system deprecation**: removing the old `GeneralFeedbackThreadModel` endpoints, frontend components, and storage models is blocked on the migration job being validated on the production environment.
 
@@ -367,6 +366,7 @@ The learner feedback acceptance tests passed locally in non-headless Chromium bu
 | **PM Demo Video** | [Drive video-link](https://drive.google.com/drive/folders/145HNlBSGKJXSIZwP1ZTazs8xp0sB4EPK) |
 | **GSoC 1.1 Web User Feedback Approval Docs** | [Technical Feedback Dashboard](https://docs.google.com/document/d/1ezAr4NfqEhnip-HNXw7fOVvvLu1qt7Q-4D4jFP4VVlU/edit?tab=t.qrfqgsnmsdcj), [Creator Feedback Dashboard](https://docs.google.com/document/d/1ezAr4NfqEhnip-HNXw7fOVvvLu1qt7Q-4D4jFP4VVlU/edit?tab=t.8m1ajq1ycib0) |
 | **UI Mocks** | [Mocks Document](https://docs.google.com/document/d/1ITlUe5c6khtH18ErIG8fJIWI05s_6fzM5-E_5sXAikY/edit?tab=t.0) |
+| **Project Google Drive |[Drive Link](https://drive.google.com/drive/folders/145HNlBSGKJXSIZwP1ZTazs8xp0sB4EPK) |
 | **CUJs** | [Critical User Journeys](https://docs.google.com/spreadsheets/d/17Y5yOGuy0y5YFPPCUF5fZAZjEyY60bq6J0lik6yH3KE) |
 | **GSoC Journals** | [medium.com/@imnitishkumar04](https://medium.com/@imnitishkumar04) |
 | **GSoC Project Page** | [Google Summer of Code](https://summerofcode.withgoogle.com/programs/2026/projects/DLicszJv) |
@@ -386,6 +386,6 @@ The system I built looks different from what I proposed in April. It is better. 
 
 Thank you to Mohit Ruwatia for the mentorship throughout this project.He gave me the freedom to work at my own pace while making sure I always had the right guidance whenever I got stuck. There were weeks where the entire scope changed and having someone who helped me think through the problem rather than just telling me what to do made the difference.
 
-Thank you to Sean Lip, Aanu Adeoti, Janee Vue, Hardik Goyal, and the rest of the Oppia community for the design reviews, technical feedback, and product discussions that shaped this system. Thank you also to Tanmay and Mohak for helping debug the CI acceptance test failure.
+Thank you to Sean Lip, Chris, Aanu Adeoti, Janee Vue, Hardik Goyal, and the rest of the Oppia community for the design reviews, technical feedback, and product discussions that shaped this system. Thank you also to Tanmay and Mohak for helping debug the CI acceptance test failure.
 
 And thank you to Google Summer of Code and the Oppia Foundation for the opportunity to build something that will be used by real learners.
