@@ -1,5 +1,6 @@
 <div align="center">
-  <img width="1774" height="887" alt="Oppia X GSoC" src="https://gist.github.com/user-attachments/assets/64796c5d-ea63-4e05-b032-0f0f61f17121" />
+  <img width="1774" height="887" alt="Oppia X GSoC" src="https://github.com/user-attachments/assets/23e60e50-f106-4296-8bd9-103537e707ec" />
+
   <h1>Google Summer of Code 2026 - Final Report</h1>
 </div>
 
@@ -23,7 +24,7 @@ Over these fourteen weeks, I built **Web User Feedback System**, a native feedba
 
 The project also includes the migration of existing lesson feedback from the legacy `GeneralFeedbackThreadModel` to the new `LessonFeedbackModel`, so that **historical feedback is preserved** as the old feedback system is deprecated.
 
-<img width="1511" height="661" alt="image" src="https://gist.github.com/user-attachments/assets/55f13581-be46-49de-aa0e-6a95fad22142" />
+<img width="1511" height="661" alt="image" src="https://github.com/user-attachments/assets/4122cfb2-d579-4e50-baa7-dbe35f5c19ee" />
 
 ---
 
@@ -57,7 +58,8 @@ In Oppia, most lessons belong to a classroom, and each classroom has a dedicated
 
 To support the new feedback system, I introduced a required **Feedback Recipient Email** field in the "Add a new classroom" modal. This email identifies the Lessons Team responsible for the classroom and is used to **notify the team whenever a learner submits lesson feedback or reports an issue related to one of their lessons**. The same address is also used for the corresponding email notifications, so the team can be alerted without having to continuously check the feedback interface.
 
-<img width="1920" height="892" alt="Add a new classroom modal with Feedback Recipient Email field" src="https://gist.github.com/user-attachments/assets/06651f38-a027-4451-89b7-5e603e853b4d" />
+<img width="1920" height="892" alt="Screenshot from 2026-09-06 17-05-00" src="https://github.com/user-attachments/assets/2ae940b5-eb2b-44a0-ab7f-db2cc5f5ac86" />
+
 
 > Since this field was added to the classroom model, I also had to migrated the existing classroom models to populate the new field.
 
@@ -68,10 +70,12 @@ While playing a lesson, learners can share suggestions to improve it by writing 
 The system also captures important lesson context such as the **card name and index, exploration ID, and lesson version** at the time the feedback was submitted. This gives lesson creators the context they need to understand exactly where the feedback came from and review it against the appropriate version of the lesson.  
 
 Logged-Out Learner View:
-<img width="1920" height="892" alt="image" src="https://gist.github.com/user-attachments/assets/9abe84c6-b223-4ad9-80f0-b4f63cd9bd8d" />
+<img width="1920" height="892" alt="Screenshot from 2026-09-06 16-58-43" src="https://github.com/user-attachments/assets/8438ccbb-1d22-4fa5-bc05-f3eceacbb65a" />
+
 
 Logged-In Learner View:
-<img width="1920" height="892" alt="image" src="https://gist.github.com/user-attachments/assets/eb2fabff-596e-4837-a516-5949fdefc266" />
+<img width="1920" height="892" alt="Screenshot from 2026-09-06 16-54-44" src="https://github.com/user-attachments/assets/7be8dd58-1245-40ed-81f8-a85c08edad86" />
+
 
 
 ### 3. Report a Lesson Issue
@@ -81,10 +85,13 @@ When a learner encounters a problem while playing a lesson, they can report it d
 The report can also include a **description, screenshot, and technical error logs** to provide additional context. Based on the selected issue category, the feedback is routed to the appropriate workflow: reports such as **typos and confusing/incorrect answers are routed to the Creator Feedback Tab**, while other issue types are routed to the **Technical Feedback Dashboard** for the technical teams to triage.
 
 Logged-Out Learner View (Has *Captcha integrated* for spam protection): 
-<img width="1288" height="777" alt="image" src="https://gist.github.com/user-attachments/assets/08f82164-fdbc-4ef9-98ea-595dc09e508e" />
+<img width="1288" height="777" alt="Screenshot from 2026-09-06 17-24-16" src="https://github.com/user-attachments/assets/950a32a2-fcb8-42e9-a326-674c75629fe6" />
+
 
 Logged-In Learner View:
-<img width="1920" height="892" alt="Report a lesson issue modal with issue categories" src="https://gist.github.com/user-attachments/assets/6211a694-cddc-4d53-b66c-768f600d66f5" />
+<img width="1920" height="892" alt="Screenshot from 2026-09-06 17-18-58" src="https://github.com/user-attachments/assets/7fe0e0d5-b7e3-4e0c-becf-b40a53f67024" />
+
+
 
 ### 4. Report a Site Issue
 
@@ -95,11 +102,13 @@ The system also captures the **page URL** from which the report was submitted an
 Unlike lesson issue reports, site issues are not routed based on lesson or classroom ownership. Instead, the system uses the **URL path of the page where the report was submitted** to determine whether the issue belongs to the **LEAP or CORE team**. The report is then routed to the appropriate technical team for triage, and the team can use the **Technical Feedback Dashboard** to review the report and create a GitHub issue when further engineering work is required.
 
 Logged-Out Learner View (Has *Captcha integrated* for spam protection): 
-<img width="1920" height="896" alt="image" src="https://gist.github.com/user-attachments/assets/a4a0d514-61d6-4173-83b3-50d8d44af3c8" />
+<img width="1920" height="896" alt="Screenshot from 2026-09-06 17-29-15" src="https://github.com/user-attachments/assets/60cd7541-cb4a-4957-8193-90cbed63c69b" />
+
 
 
 Logged-In Learner View:
-<img width="1920" height="896" alt="image" src="https://gist.github.com/user-attachments/assets/5d49fb12-5de7-4b4d-b612-64187a7a4cc2" />
+<img width="1920" height="896" alt="Screenshot from 2026-09-06 17-28-43" src="https://github.com/user-attachments/assets/cce891a1-1d83-4d35-8e49-4c900b39df06" />
+
 
 
 ### 5. Feedback Review for Lesson Creators
@@ -133,9 +142,12 @@ The **My Suggestions** tab gives learners a place to view the feedback and sugge
 
 For lesson feedback, learners can also see **responses from lesson creators**, allowing the conversation to continue within Oppia. This closes the loop between submitting feedback and seeing how the lesson team responded to it.
 
-<img width="1920" height="896" alt="image" src="https://gist.github.com/user-attachments/assets/d620b77c-76dc-4f84-8734-d93116f70ea0" />
+List View of all submitted Suggestions by User.
+<img width="1920" height="896" alt="Screenshot from 2026-09-06 17-51-26" src="https://github.com/user-attachments/assets/51398938-9f44-4841-9099-f24fa82bfd46" />
 
-<img width="1920" height="896" alt="image" src="https://gist.github.com/user-attachments/assets/d5ff8b47-e35a-4a74-8bc8-be670e27b74a" />
+Detailed View of a particular suggestion.
+<img width="1920" height="896" alt="Screenshot from 2026-09-06 17-51-43" src="https://github.com/user-attachments/assets/75d1e813-bd35-4907-9371-8f0c975a3edc" />
+
 
 Video demo:
 
@@ -149,11 +161,13 @@ The feedback system is built as a set of connected flows rather than a single fe
 
 ### 1. End-to-End Feedback Flow
 
-<img width="1177" height="1337" alt="Flowchart of Web User Feedback flow" src="https://gist.github.com/user-attachments/assets/451d9480-af29-402e-b96a-0012fba435ce" />
+<img width="1177" height="1337" alt="End-to-End Feedback Flow" src="https://github.com/user-attachments/assets/b8276b10-187a-4398-9add-2c9d52e5997e" />
+
 
 At a high level, every feedback submission follows the same pipeline:
 
-<img width="6392" height="780" alt="Oppia Feedback Submission-2026-09-06-131230" src="https://gist.github.com/user-attachments/assets/70c477d0-75db-4c0c-840e-8e2cd524a80b" />
+<img width="6392" height="780" alt="Oppia Feedback Submission-2026-09-06-131230" src="https://github.com/user-attachments/assets/280cfe08-3732-46fe-acaf-6db3a843ec07" />
+
 
 There are three entry points into the system:
 
@@ -191,7 +205,8 @@ The backend service layer is responsible for validating these inputs, creating t
 
 ### 3. Email Routing Logic
 
-<img width="4751" height="5404" alt="Email routing logic for feedback submissions" src="https://gist.github.com/user-attachments/assets/06e9343c-446f-47e3-ae09-f8d23ec3cc71" />
+<img width="4751" height="5404" alt="Oppia Feedback Submission-2026-09-06-124759" src="https://github.com/user-attachments/assets/c1888cf2-34a3-4c1e-bb32-6cc88b242414" />
+
 
 Routing was one of the important parts of the architecture because the person submitting feedback should not have to know which team is responsible for it.
 
@@ -205,7 +220,8 @@ This means routing is derived from information the system already knows about th
 
 ### 4. Session Information and Screenshot Capture
 
-<img width="7992" height="3837" alt="Session information and screenshot capture flow" src="https://gist.github.com/user-attachments/assets/019206de-62bd-471e-9685-5896550ee1a3" />
+<img width="7992" height="3837" alt="Oppia Feedback Submission-2026-09-06-125047" src="https://github.com/user-attachments/assets/9ff501b1-14a1-4e31-90d4-90f7363629cf" />
+
 
 One of the main design goals was to make reports useful for investigation without requiring learners to manually collect technical information.
 
@@ -243,7 +259,8 @@ This creates a complete feedback loop:
 
 #### Data retention
 
-<img width="5536" height="5004" alt="Feedback data retention flow" src="https://gist.github.com/user-attachments/assets/d58d9212-1d20-4c1c-b958-50879dd7102b" />
+<img width="5536" height="5004" alt="Oppia Feedback Submission-2026-09-06-125147" src="https://github.com/user-attachments/assets/87fc2a5c-9ee1-424c-80c7-f8858075573c" />
+
 
 Feedback data is subject to automated retention rules so that information is not stored indefinitely.
 
