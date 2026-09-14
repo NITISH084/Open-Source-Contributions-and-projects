@@ -366,7 +366,7 @@ The learner feedback acceptance tests passed locally in non-headless Chromium bu
 | **PM Demo Video** | [Drive video-link](https://drive.google.com/drive/folders/145HNlBSGKJXSIZwP1ZTazs8xp0sB4EPK) |
 | **GSoC 1.1 Web User Feedback Approval Docs** | [Technical Feedback Dashboard](https://docs.google.com/document/d/1ezAr4NfqEhnip-HNXw7fOVvvLu1qt7Q-4D4jFP4VVlU/edit?tab=t.qrfqgsnmsdcj), [Creator Feedback Dashboard](https://docs.google.com/document/d/1ezAr4NfqEhnip-HNXw7fOVvvLu1qt7Q-4D4jFP4VVlU/edit?tab=t.8m1ajq1ycib0) |
 | **UI Mocks** | [Mocks Document](https://docs.google.com/document/d/1ITlUe5c6khtH18ErIG8fJIWI05s_6fzM5-E_5sXAikY/edit?tab=t.0) |
-| **Project Google Drive |[Drive Link](https://drive.google.com/drive/folders/145HNlBSGKJXSIZwP1ZTazs8xp0sB4EPK) |
+| **Project Google Drive** |[Drive Link](https://drive.google.com/drive/folders/145HNlBSGKJXSIZwP1ZTazs8xp0sB4EPK) |
 | **CUJs** | [Critical User Journeys](https://docs.google.com/spreadsheets/d/17Y5yOGuy0y5YFPPCUF5fZAZjEyY60bq6J0lik6yH3KE) |
 | **GSoC Journals** | [medium.com/@imnitishkumar04](https://medium.com/@imnitishkumar04) |
 | **GSoC Project Page** | [Google Summer of Code](https://summerofcode.withgoogle.com/programs/2026/projects/DLicszJv) |
